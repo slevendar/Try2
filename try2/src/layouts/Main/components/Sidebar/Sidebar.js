@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { Divider, Drawer } from '@material-ui/core';
+import { Divider, Drawer, TextareaAutosize } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import PeopleIcon from '@material-ui/icons/People';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     width: 240,
     [theme.breakpoints.up('lg')]: {
       marginTop: 64,
-      height: 'calc(100% - 64px)'
+      height: 'calc(100% - 64px)',
     }
   },
   root: {
@@ -27,7 +27,8 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
+
   },
   divider: {
     margin: theme.spacing(2, 0)
@@ -87,7 +88,7 @@ const Sidebar = props => {
 
   return (
     <Drawer
-      anchor="left"
+      anchor="right"
       classes={{ paper: classes.drawer }}
       onClose={onClose}
       open={open}
