@@ -31,7 +31,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "@types/history": "^4.7.6",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "clsx": "^1.1.0",
     "history": "^4.10.1",
     "material-icons": "^0.3.1",
